@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.TestWdg.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:theme="@style/Theme.TestWdg.AppWidgetContainer">
+
+    <RelativeLayout
+        android:id="@+id/window"
+        android:layout_width="392dp"
+        android:layout_height="141dp"
+        android:background="@drawable/border">
+
+        <TextClock
+            android:layout_width="203dp"
+            android:layout_height="79dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/pt_serif_bold"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="367dp"
+        android:layout_height="20dp"
+        android:layout_margin="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/light_blue_900">
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_serif_bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:text="Time"
+            android:textSize="11sp"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:id="@+id/x"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="275dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:fontFamily="@font/pt_serif_bold"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginLeft="4.5dp"
+                android:text="X"
+                android:textSize="8sp"
+                android:textColor="@color/black">
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#xA;" />
+
+</RelativeLayout>
+
